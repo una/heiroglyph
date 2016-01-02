@@ -3,6 +3,7 @@
 import React         from 'react';
 import {Link}        from 'react-router';
 import DocumentTitle from 'react-document-title';
+import IconList from '../components/IconList';
 
 const propTypes = {
   currentUser: React.PropTypes.object
@@ -22,6 +23,8 @@ class HomePage extends React.Component {
           <div>
             Hello World
           </div>
+
+          <IconList/>
 
           <div>
             <Link to="/search">Search</Link>
