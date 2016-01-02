@@ -6,6 +6,7 @@ import CurrentUserActions from './actions/CurrentUserActions';
 import CurrentUserStore   from './stores/CurrentUserStore';
 import Header             from './components/Header';
 import Footer             from './components/Footer';
+import IconList           from './components/IconList';
 
 const propTypes = {
   params: React.PropTypes.object,
@@ -57,13 +58,21 @@ class App extends React.Component {
     });
   }
 
+  loadIcons(){
+    this.setState({
+      icons: require('./data/iconListInfo')
+    })
+  }
+
   render() {
     return (
       <div>
 
         <Header />
 
-        {this.renderChildren()}
+        {/* {this.renderChildren()} */}
+
+        <IconList loadIcons={this.loadIcons} linkState={this.linkState.bind(this)}/>
 
         <Footer />
 
