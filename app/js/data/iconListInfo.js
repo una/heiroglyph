@@ -1,6 +1,6 @@
 // JSON Object of all of the icons and their tags
 
-const icons = {
+export default {
   apple : {
     name : 'apple',
     color: '#be0000',
@@ -58,5 +58,3 @@ const icons = {
     categories: ['gift', 'shopping', 'supermarket']
   }
 };
-
-export default icons;
