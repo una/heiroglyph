@@ -1,5 +1,6 @@
 // JSON Object of all of the icons and their tags
-module.exports = {
+
+const icons = {
   apple : {
     name : 'apple',
     color: '#be0000',
@@ -57,3 +58,5 @@ module.exports = {
     categories: ['gift', 'shopping', 'supermarket']
   }
 };
+
+export default icons;

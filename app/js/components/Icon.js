@@ -1,10 +1,7 @@
 'use strict';
 
 import React from 'react';
-import autobind from 'autobind-decorator';
 
-
-@autobind
 class Icon extends React.Component{
 
   render() {
@@ -14,7 +11,7 @@ class Icon extends React.Component{
       <li className="icon">
         <h3 className="icon--name">
           {details.name}</h3>
-        <img src={details.image} alt={details.name} />
+        <img src={'images/icons/'+ details.image} alt={details.name} />
       </li>
     )
   }
