@@ -11,7 +11,7 @@ const config = {
   },
 
   images: {
-    src: './app/images/**/*.{jpeg,jpg,png,gif}',
+    src: './app/images/**/*.{svg,jpeg,jpg,png,gif}',
     dest: './build/images/'
   },
 
