@@ -17,8 +17,6 @@ class App extends React.Component {
       currentUser: {},
       icons: iconData
     }
-
-    console.log(this.state);
   }
 
 
@@ -33,7 +31,7 @@ class App extends React.Component {
 
         <Header />
 
-        <IconList icons={this.state.icons} />
+          <IconList icons={this.state.icons} />
 
         <Footer />
 

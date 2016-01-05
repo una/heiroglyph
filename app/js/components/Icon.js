@@ -7,11 +7,20 @@ class Icon extends React.Component{
   render() {
     var details = this.props.details;
 
+    var iconStyle = {
+      backgroundColor: details.color,
+      WebkitMask: 'url("images/icons/' + details.image + '") no-repeat 50% 50%',
+      Mask: 'url(' + details.image + ') no-repeat 50% 50%',
+      width: '50px',
+      height: '50px'
+    };
+
     return (
       <li className="icon">
         <h3 className="icon--name">
           {details.name}</h3>
-        <img src={'images/icons/'+ details.image} alt={details.name} />
+          <div style={iconStyle}></div>
+          <p>{details.tags.join(', ')}</p>
       </li>
     )
   }

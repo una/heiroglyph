@@ -9,12 +9,10 @@ class IconList extends React.Component{
 
   constructor(props) {
     super(props);
-
-    console.log(props);
   }
 
   renderIcon = (key) => {
-    return <Icon details={this.props.icons[key]}></Icon>
+    return <Icon key={key} details={this.props.icons[key]}></Icon>
   }
 
   render() {
