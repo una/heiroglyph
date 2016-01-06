@@ -45,7 +45,6 @@
     "gulp-streamify": "0.0.5",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.6",
-    "history": "1.13.0",
     "humps": "^1.0.0",
     "istanbul": "^0.4.0",
     "jsdom": "3.1.2",
@@ -54,6 +53,7 @@
     "react": "^0.14.x",
     "react-addons-test-utils": "^0.14.0",
     "react-document-title": "^2.0.1",
+    "react-mixin": "3.0.0",
     "react-dom": "^0.14.0",
     "react-router": "^1.0.0-rc1",
     "reflux": "^0.3.0",
@@ -70,5 +70,8 @@
     "lint": "./node_modules/.bin/gulp lint",
     "test": "./node_modules/.bin/gulp test",
     "dev": "gulp dev"
+  },
+  "dependencies": {
+    "babel-preset-stage-1": "^6.3.13"
   }
 }
